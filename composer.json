@@ -1,11 +1,11 @@
 {
-  "name": "vladimir-yuldashev/laravel-queue-rabbitmq",
+  "name": "yuriksensej/laravel-queue-rabbitmq",
   "description": "RabbitMQ driver for Laravel Queue. Supports Laravel Horizon",
   "license": "MIT",
   "authors": [
     {
-      "name": "Vladimir Yuldashev",
-      "email": "misterio92@gmail.com"
+      "name": "Yurii Minchenko",
+      "email": "yuraminchenko@gmail.com"
     }
   ],
   "require": {
@@ -25,12 +25,12 @@
   },
   "autoload": {
     "psr-4": {
-      "VladimirYuldashev\\LaravelQueueRabbitMQ\\": "src/"
+      "Yuriksensej\\LaravelQueueRabbitMQ\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "VladimirYuldashev\\LaravelQueueRabbitMQ\\Tests\\": "tests/"
+      "Yuriksensej\\LaravelQueueRabbitMQ\\Tests\\": "tests/"
     }
   },
   "extra": {
@@ -39,7 +39,7 @@
     },
     "laravel": {
       "providers": [
-        "VladimirYuldashev\\LaravelQueueRabbitMQ\\LaravelQueueRabbitMQServiceProvider"
+        "Yuriksensej\\LaravelQueueRabbitMQ\\LaravelQueueRabbitMQServiceProvider"
       ]
     }
   },
