@@ -160,9 +160,9 @@ class RabbitMQQueue extends Queue implements QueueContract
             [$queue] = $this->declareEverything($queueName);
 
             $consumer = $this->context->createConsumer($queue);
-
+            $job = $this->getJobClass();
             if ($message = $consumer->receiveNoWait()) {
-                return new RabbitMQJob($this->container, $this, $consumer, $message);
+                return new $job($this->container, $this, $consumer, $message);
             }
         } catch (\Throwable $exception) {
             $this->reportConnectionError('pop', $exception);
@@ -299,5 +299,20 @@ class RabbitMQQueue extends Queue implements QueueContract
 
         // Sleep so that we don't flood the log file
         sleep($this->sleepOnError);
+    }
+
+    /**
+     * Gets the Job class from config or returns the default job class
+     * when the job class does not extend the default job class an exception is thrown
+     *
+     * @return array|\ArrayAccess|mixed
+     * @throws \Throwable
+     */
+    public function getJobClass()
+    {
+        $job = Arr::get($this->queueOptions, 'job', RabbitMQJob::class);
+        throw_if(! is_a($job, RabbitMQJob::class, true), Exception::class, sprintf('Class %s must extend: %s', $job, RabbitMQJob::class));
+
+        return $job;
     }
 }
