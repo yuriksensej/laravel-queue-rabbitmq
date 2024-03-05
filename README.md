@@ -138,7 +138,7 @@ Starting with 8.0, this package supports [Laravel Horizon](http://horizon.larave
 For Lumen usage the service provider should be registered manually as follow in `bootstrap/app.php`:
 
 ```php
-$app->register(VladimirYuldashev\LaravelQueueRabbitMQ\LaravelQueueRabbitMQServiceProvider::class);
+$app->register(Yuriksensej\LaravelQueueRabbitMQ\LaravelQueueRabbitMQServiceProvider::class);
 ```
 
 

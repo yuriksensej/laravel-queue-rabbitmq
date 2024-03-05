@@ -1,14 +1,14 @@
 <?php
 
-namespace VladimirYuldashev\LaravelQueueRabbitMQ\Tests\Functional;
+namespace Yuriksensej\LaravelQueueRabbitMQ\Tests\Functional;
 
 use PHPUnit\Framework\TestCase;
 use Enqueue\AmqpLib\AmqpContext;
 use Illuminate\Events\Dispatcher;
 use Enqueue\AmqpLib\AmqpConnectionFactory;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\Connectors\RabbitMQConnector;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\Connectors\RabbitMQConnector;
 
 /**
  * @group functional

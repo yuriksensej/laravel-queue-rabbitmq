@@ -1,6 +1,6 @@
 <?php
 
-namespace VladimirYuldashev\LaravelQueueRabbitMQ\Queue;
+namespace Yuriksensej\LaravelQueueRabbitMQ\Queue;
 
 use Interop\Amqp\AmqpQueue;
 use Interop\Amqp\AmqpTopic;
@@ -11,7 +11,7 @@ use Interop\Amqp\AmqpConsumer;
 use Interop\Amqp\AmqpProducer;
 use PHPUnit\Framework\TestCase;
 use Illuminate\Container\Container;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\Jobs\RabbitMQJob;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\Jobs\RabbitMQJob;
 
 class RabbitMQQueueTest extends TestCase
 {

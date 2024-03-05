@@ -1,6 +1,6 @@
 <?php
 
-namespace VladimirYuldashev\LaravelQueueRabbitMQ\Tests\Queue\Connectors;
+namespace Yuriksensej\LaravelQueueRabbitMQ\Tests\Queue\Connectors;
 
 use Interop\Amqp\AmqpContext;
 use PHPUnit\Framework\TestCase;
@@ -8,11 +8,11 @@ use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Queue\Events\WorkerStopping;
 use Enqueue\AmqpTools\RabbitMqDlxDelayStrategy;
 use Illuminate\Queue\Connectors\ConnectorInterface;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\Connectors\RabbitMQConnector;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Tests\Mock\AmqpConnectionFactorySpy;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Tests\Mock\CustomContextAmqpConnectionFactoryMock;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Tests\Mock\DelayStrategyAwareAmqpConnectionFactorySpy;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\Connectors\RabbitMQConnector;
+use Yuriksensej\LaravelQueueRabbitMQ\Tests\Mock\AmqpConnectionFactorySpy;
+use Yuriksensej\LaravelQueueRabbitMQ\Tests\Mock\CustomContextAmqpConnectionFactoryMock;
+use Yuriksensej\LaravelQueueRabbitMQ\Tests\Mock\DelayStrategyAwareAmqpConnectionFactorySpy;
 
 class RabbitMQConnectorTest extends TestCase
 {

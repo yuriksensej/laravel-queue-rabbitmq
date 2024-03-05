@@ -1,6 +1,6 @@
 <?php
 
-namespace VladimirYuldashev\LaravelQueueRabbitMQ\Horizon;
+namespace Yuriksensej\LaravelQueueRabbitMQ\Horizon;
 
 use Laravel\Horizon\JobId;
 use Laravel\Horizon\JobPayload;
@@ -8,8 +8,8 @@ use Laravel\Horizon\Events\JobPushed;
 use Laravel\Horizon\Events\JobDeleted;
 use Laravel\Horizon\Events\JobReserved;
 use Illuminate\Contracts\Events\Dispatcher;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\Jobs\RabbitMQJob;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\RabbitMQQueue as BaseRabbitMQQueue;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\Jobs\RabbitMQJob;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\RabbitMQQueue as BaseRabbitMQQueue;
 
 class RabbitMQQueue extends BaseRabbitMQQueue
 {
