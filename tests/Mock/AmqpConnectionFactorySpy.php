@@ -1,6 +1,6 @@
 <?php
 
-namespace VladimirYuldashev\LaravelQueueRabbitMQ\Tests\Mock;
+namespace Yuriksensej\LaravelQueueRabbitMQ\Tests\Mock;
 
 use Interop\Queue\Context;
 

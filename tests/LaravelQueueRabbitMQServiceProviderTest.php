@@ -1,14 +1,14 @@
 <?php
 
-namespace VladimirYuldashev\LaravelQueueRabbitMQ\Tests;
+namespace Yuriksensej\LaravelQueueRabbitMQ\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Illuminate\Queue\QueueManager;
 use Illuminate\Container\Container;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Events\Dispatcher;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\Connectors\RabbitMQConnector;
-use VladimirYuldashev\LaravelQueueRabbitMQ\LaravelQueueRabbitMQServiceProvider;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\Connectors\RabbitMQConnector;
+use Yuriksensej\LaravelQueueRabbitMQ\LaravelQueueRabbitMQServiceProvider;
 
 class LaravelQueueRabbitMQServiceProviderTest extends TestCase
 {

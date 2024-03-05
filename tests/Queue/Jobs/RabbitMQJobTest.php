@@ -1,6 +1,6 @@
 <?php
 
-namespace VladimirYuldashev\LaravelQueueRabbitMQ\Tests\Queue\Jobs;
+namespace Yuriksensej\LaravelQueueRabbitMQ\Tests\Queue\Jobs;
 
 use Illuminate\Queue\Jobs\Job;
 use Interop\Amqp\AmqpConsumer;
@@ -9,8 +9,8 @@ use Interop\Amqp\Impl\AmqpMessage;
 use Illuminate\Container\Container;
 use Illuminate\Database\DetectsDeadlocks;
 use Illuminate\Contracts\Queue\Job as JobContract;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\Jobs\RabbitMQJob;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\Jobs\RabbitMQJob;
 
 class RabbitMQJobTest extends TestCase
 {

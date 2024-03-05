@@ -1,15 +1,15 @@
 <?php
 
-namespace VladimirYuldashev\LaravelQueueRabbitMQ\Tests\Functional;
+namespace Yuriksensej\LaravelQueueRabbitMQ\Tests\Functional;
 
 use Psr\Log\NullLogger;
 use PHPUnit\Framework\TestCase;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Container\Container;
 use Enqueue\AmqpLib\AmqpConnectionFactory;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\Jobs\RabbitMQJob;
-use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\Connectors\RabbitMQConnector;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\Jobs\RabbitMQJob;
+use Yuriksensej\LaravelQueueRabbitMQ\Queue\Connectors\RabbitMQConnector;
 
 /**
  * @group functional
