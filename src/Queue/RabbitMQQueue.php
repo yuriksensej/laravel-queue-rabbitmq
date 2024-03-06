@@ -5,6 +5,7 @@ namespace Yuriksensej\LaravelQueueRabbitMQ\Queue;
 use RuntimeException;
 use Illuminate\Queue\Queue;
 use Illuminate\Support\Str;
+use Illuminate\Support\Arr;
 use Interop\Amqp\AmqpQueue;
 use Interop\Amqp\AmqpTopic;
 use Psr\Log\LoggerInterface;

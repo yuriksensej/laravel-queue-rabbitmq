@@ -4,7 +4,6 @@ namespace Yuriksensej\LaravelQueueRabbitMQ\Queue\Jobs;
 
 use Exception;
 use Illuminate\Support\Str;
-use Illuminate\Support\Arr;
 use Interop\Amqp\AmqpMessage;
 use Illuminate\Queue\Jobs\Job;
 use Interop\Amqp\AmqpConsumer;
